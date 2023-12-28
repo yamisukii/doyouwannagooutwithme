@@ -1,18 +1,18 @@
 var flag = true;
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', function (event) {
     var button = document.getElementById('noButton');
     var distanceThreshold = 170; // Adjust this threshold as needed
     var distance = calculateDistance(button, event.clientX, event.clientY);
 
     if (distance < distanceThreshold) {
         // Change to a new gif when the mouse is near the button
-       changeGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');
-       flag = false;
-    } 
-    if(!flag && distance > distanceThreshold) {
+        changeGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');
+        flag = false;
+    }
+    if (!flag && distance > distanceThreshold) {
         // Change back to the old gif when the mouse is away from the button
-       changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
-       flag = true;
+        changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
+        flag = true;
     }
 });
 
@@ -42,10 +42,10 @@ function moveButton() {
 
 //This Function is just for mobile devices 
 function moveAndChangeGif() {
-    moveButton(); 
-    if (flag){
-    changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
-        flag = false;}
+    moveButton();
+    if (document.getElementById("gif").src != 'https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif') {
+        changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
+    }
 
 }
 
