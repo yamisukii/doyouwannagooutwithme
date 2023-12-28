@@ -1,4 +1,8 @@
 var flag = true;
+var gif
+document.addEventListener(`load`, function (event) {
+    gif = document.getElementById("gif").src;
+})
 document.addEventListener('mousemove', function (event) {
     var button = document.getElementById('noButton');
     var distanceThreshold = 170; // Adjust this threshold as needed
@@ -43,12 +47,15 @@ function moveButton() {
 //This Function is just for mobile devices 
 function moveAndChangeGif() {
     moveButton();
-    if (document.getElementById("gif").src !== 'https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif') {
-        changeGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');;
+    if (gif != 'https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif') {
+        changeGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');
+        updateGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');
     }
 
 }
-
+function updateGif(newGifString) {
+    gif = newGifString;
+}
 function changeGif(newGifSrc) {
     var gifImage = document.getElementById("gif");
     gifImage.src = newGifSrc;
