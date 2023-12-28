@@ -8,13 +8,13 @@ body {
 
 #noButton {
     position: absolute;
-    margin-left: 150px;
+    margin-left: 350px;
     transition: 0.5s;
 }
 
 #yesButton {
     position: absolute;
-    margin-right: 150px;
+    margin-right: 400px;
 }
 
 .header_text {
@@ -32,8 +32,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .btn {
@@ -52,6 +52,7 @@ body {
 
 .gif_container {
     display: flex;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
 }
