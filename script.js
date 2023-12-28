@@ -43,8 +43,8 @@ function moveButton() {
 //This Function is just for mobile devices 
 function moveAndChangeGif() {
     moveButton();
-    if (document.getElementById("gif").src != 'https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif') {
-        changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
+    if (document.getElementById("gif").src !== 'https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif') {
+        changeGif('https://i0.wp.com/i.pinimg.com/originals/19/04/d1/1904d1081f9a1ebbf21ca40b95dee490.gif');;
     }
 
 }
