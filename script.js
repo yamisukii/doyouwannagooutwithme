@@ -44,7 +44,7 @@ function moveButton() {
 function moveAndChangeGif() {
     moveButton(); 
     changeGif('https://i.pinimg.com/originals/cb/0f/33/cb0f3377971e05f3e5ea7ed771a9c2f8.gif');
-    flag = false;
+  
 
 }
 
